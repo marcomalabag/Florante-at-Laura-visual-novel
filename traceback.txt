@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 18, in script
+    jump Talata_9_through_12_script
+ScriptError: could not find label 'Talata_9_through_12_script'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 18, in script
+    jump Talata_9_through_12_script
+  File "renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'Talata_9_through_12_script'.
+
+Windows-10-10.0.18362
+Ren'Py 7.4.11.2266
+Florante at Laura visual novel 1.0
+Sat Feb  5 18:11:07 2022

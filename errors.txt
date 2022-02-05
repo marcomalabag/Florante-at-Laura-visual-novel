@@ -1,0 +1,12 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+The label start is defined twice, at File "game/script.rpy", line 8:
+label start:
+and File "game/scripts/Talata_1-4/Talata_1to4_script.rpyc", line 27:
+label start:
+
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sat Feb  5 17:56:08 2022

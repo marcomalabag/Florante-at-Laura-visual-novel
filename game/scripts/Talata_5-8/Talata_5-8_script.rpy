@@ -122,4 +122,20 @@ label Talata_5_through_8_script:
 
     f "Iniwan ko ang pamumuno kay Menandro, ang aking matalik na kaibigan."
 
-    
+
+
+    g "Sa wakas andito na ulit tayo sa ALbanya."
+
+    "Maraming kawal ang dumating at itinali at binugbog si Florante pagkatapos ay idinala sa bilangguan."
+
+    g "Sino ang makakagawa sayo nito?"
+
+    f "Sigurado akong si Adolfo ang may pakana nito. Ang mga kawal na pumalibot sa atin ay di hamak na kawal ni Adolfo."
+
+    "Makalipas ang dalawampu't walong araw."
+
+    g "Mahigit dalawampung araw na tayong bilanggo dito Florante, klailangan na natin tumakas."
+
+    f "Ang aking ama at ang hari ay walang awang pinatay ni Adolfo, magbabayad siya sa ginawa niya."
+
+    "Itinali muli si Florante at idinala sa kagubatan at itinali sa punong Higera."

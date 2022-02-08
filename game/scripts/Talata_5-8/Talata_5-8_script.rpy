@@ -22,6 +22,20 @@ image Duke_Briseo_Palace_Day:
     zoom 0.75
     "images/Talata_5-8/Duke_Briseo_Palace_Day.png"
 
+image Stage:
+    zoom 0.25
+    "images/Talata_5-8/Stage.jpg"
+
+image Florante_Room = im.Scale("images/Talata_5-8/Florante_Room.jpg", 1300, 750)
+
+image Classroom:
+    zoom 1.0
+    "images/Talata_5-8/classroom.jpg"
+
+image Haring_Linceo_Palace:
+    zoom 1.0
+    "images/Talata_5-8/Haring_Linseo_Palace.png"
+
 image Happy_Florante = im.FactorScale("images/Talata_5-8/florante_happy.png", 0.5)
 image Happy_Florante_Reversed = im.Flip(im.FactorScale("images/Talata_5-8/florante_happy.png", 0.5), horizontal="True")
 
@@ -31,11 +45,15 @@ image Sad_Florante_Reversed = im.Flip(im.FactorScale("images/Talata_5-8/florante
 
 label Talata_5_through_8_script:
 
+    scene Stage
+
     g "Ayan na! Magsisimula na ang dulaan!"
 
-    a "Ikaw Floranteng mang-aagaw dapat sayo'y mamatay!"
+    d "Ikaw Floranteng mang-aagaw dapat sayo'y mamatay!"
 
     g "Saklolo! Papatayin ni Adolfo si Florante!"
+
+    "Iniligtas ni Menandro si Florante"
 
     m "Ikaw Adolfo, anon'g nangyari sayo? Nasisiraan ka na ba ng ulo? Ang pag-sasadula'y iyong tinotoo, hindi mo kailangan gawin ito."
 
@@ -44,6 +62,8 @@ label Talata_5_through_8_script:
     m "Ako si Menandro, matalik kong kaibigan si Florante. Nakilala ko siya dahil ang aking tiyuhin ay ang guro ni Florante."
 
     m "Ang nagtangka naman sa buhay ni Florante ay si Adolfo. Inggit siya kay Florante sapagkat nalampasan ni Florante ang kanyang kakayahan sa loob lamang ng anim na taon."
+
+    scene Florante_Room
 
     show Sad_Florante at right
 
@@ -54,7 +74,11 @@ label Talata_5_through_8_script:
     f "Oh mahal kong ina! Bakit mo ako iniwan? Ako'y hindi mo nakasama ang matagal." 
     f "Ama, pupunta riya't ika'y aking dadamayan."
 
-    f "Ako'y magpapaalam sa inyo't nagpapasalamat. Nagpapasalamat sa lahat-lahat."
+    scene Classroom
+
+    show Happy_Florante
+
+    f "Ako'y nagpapaalam sa inyo't nagpapasalamat. Nagpapasalamat sa lahat-lahat."
 
     scene Duke_Briseo_Palace_Day
 
@@ -66,12 +90,24 @@ label Talata_5_through_8_script:
 
     db "Magandang araw din sa iyo Gerry, ako naman si Duke Briseo. Ama ni Florante tagapayo ni Haring Linceo."
 
+    hide Happy_Florante_Reversed
+
+    "May dumating na kawal ng krotona upang ipadala ang isang liham para kay Duke Briseo"
+
     db "May sulat na dumating mula sa Krotona humihingi ng tulong na kalabanin ang mga taga Persya na may intensyong manakop sa Krotona."
 
+    scene Haring_Linceo_Palace
 
-    hl "Ako si Haring Lince na taga Krotona. Ako ay nagagalak na kayo'y makilala at ito ang aking anak na si Laura."
+    "Nakita ni Florante si Laura"
+
+    hl "Ako si Haring Linceo na taga Krotona. Ako ay nagagalak na kayo'y makilala at ito ang aking anak na si Laura."
 
     f "Masaya ako't nakilala kita. Sana tayo'y magkakilala pa ng lubos at maging magkaibigan o higit pa."
+
+    scene black
+    "Umalis si Florante ng ilang buwan pang makipagdigmaan"
+
+    scene Haring_Linceo_Palace
 
     hl "Ngayo'y araw ng pakikipagdigma at si Florante ay makikipaglaban para sa bayan."
 

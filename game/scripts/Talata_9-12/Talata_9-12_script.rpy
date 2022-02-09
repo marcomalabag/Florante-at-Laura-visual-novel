@@ -21,6 +21,7 @@ image Market:
     "images/Talata_9-12/Market.jpg"
 
 image Bazaar:
+    zoom .70
     "images/Talata_9-12/Bazaar.jpg"
 
 

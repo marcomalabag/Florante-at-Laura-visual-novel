@@ -4,7 +4,7 @@
 # name of the character.
 
 #define e = Character("Eileen")
-define m = Character("Marco")
+define Marco = Character("Marco")
 define f = Character("Florante")
 define a = Character("Aladin")
 define l = Character("liyon")
@@ -36,20 +36,20 @@ label Talata_1_through_4_script:
 
     # These display lines of dialogue.
 
-    m "Ang dilim dito sa gubat at may naririnig akong malakas na iyak. Doon galing ang iyak na iyon."
+    Marco "Ang dilim dito sa gubat at may naririnig akong malakas na iyak. Doon galing ang iyak na iyon."
 
     f "(crying)"
 
-    m "Anong pangalan mo at bakit nakatali ka sa puno ng Higera."
+    Marco "Anong pangalan mo at bakit nakatali ka sa puno ng Higera."
 
     f "Ako si Florante, anak ng isang prinsesa at ng isang tagapag-payong maharlika,
     at tinali ako ng mga kalaban ko dito sa puno ng Higera."
 
-    m "Bakit ka umiiyak?"
+    Marco "Bakit ka umiiyak?"
 
     f  "Dahil nawala sa akin ang aking ama na si Duke Briseo at ninakawan ako."
 
-    m "Nawalan ka ng ama at ninakawan ka? Ano ang ninakawan sa iyo?"
+    Marco "Nawalan ka ng ama at ninakawan ka? Ano ang ninakawan sa iyo?"
 
     f "Ang aking mahal na si Laura. Ang tao na gumawa nito ay ang aking kalaban na si Konde Adolfo."
 
@@ -59,7 +59,7 @@ label Talata_1_through_4_script:
 
     a "Dito pala ang pinanggagalingan ng malakas na iyak."
 
-    m "S-sino ka?"
+    Marco "S-sino ka?"
 
     a "Ako si Aladin. Ako ay isang moro galing sa Persya."
 
@@ -67,7 +67,7 @@ label Talata_1_through_4_script:
 
     l "(growling)"
 
-    m "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila"
+    Marco "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila"
 
     a "Wag kayo mag alala, ako ang bahala dito"
 
@@ -75,7 +75,7 @@ label Talata_1_through_4_script:
 
     a "(Battle noises)"
 
-    m "Kung hindi dahil sa iyo si Florante ay kinain na ng mga leon pero mukhang nawalan ng malay itong si Florante."
+    Marco "Kung hindi dahil sa iyo si Florante ay kinain na ng mga leon pero mukhang nawalan ng malay itong si Florante."
 
     a "Sige, ako na ang bahala kay Florante hanggang sa manumbalik ang lakas niya."
 
@@ -100,7 +100,7 @@ label Talata_1_through_4_script:
 
     hide Neutral_Aladin_Flipped
 
-    m "Bakit?"
+    Marco "Bakit?"
 
     hide Suprised_Florante
 
@@ -116,7 +116,7 @@ label Talata_1_through_4_script:
 
     f "Kung hindi dahil sa aking pinsan na si Menalipo, mamatay na sana ako."
 
-    m "Ganon ba? Ano pa ang nangyari noong bata ka pa."
+    Marco "Ganon ba? Ano pa ang nangyari noong bata ka pa."
 
     f "Sa edad na 11, pinadala ako ng aking mga magulang na sina Duke Briseo at Prinsesa Floresca sa Atenas, Gresya."
 
@@ -127,7 +127,7 @@ label Talata_1_through_4_script:
 
     f "Pero anim na taon pa lang at nalampasan ko na siya sa kakayahan, kagalingan at katalinuhan."
 
-    m "Ano ang naging reaksyon ni Adolfo?"
+    Marco "Ano ang naging reaksyon ni Adolfo?"
 
     f "Dahil sa katanyagan at pagkilala na nakuha ko,
     hindi ikinatuwa ni Adolfo."

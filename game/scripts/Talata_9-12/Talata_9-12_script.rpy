@@ -40,6 +40,12 @@ image Florante_Neutral_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Neu
 image Florante_Suprised = im.FactorScale("images/Talata_9-12/Suprised_Florante.jpg", 0.5)
 image Florante_Suprised_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Suprised_Florante.jpg", 0.5), horizontal="True")
 
+image Laura_Neutral = im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.5)
+image Laura_Neutral_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.5), horizontal="True")
+
+image Laura_Suprised = im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.5)
+image Laura_Suprised_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.5), horizontal="True")
+
 
 
 label Talata_9_through_12_script:
@@ -90,6 +96,8 @@ label Talata_9_through_12_script:
 
     Unknown "Ayos ka lang ba?"
     Unknown "Hindi ka ba nasaktan ng lalaki na nag aalipusta sa iyo?"
+
+    show Laura_Neutral at right
     Laura "…"
     Unknown "Kung nasaktan ka… papakainin ko sa ka niya ang mga salita niya sa’yo."
     Laura "Ah, ayos lang ho ako"
@@ -97,6 +105,8 @@ label Talata_9_through_12_script:
     Unknown "Halika, lumayo pa tayo sa kanya."
 
     scene Bazaar
+
+    show Laura_Neutral at right
 
     Laura "Salamat ho"
     Laura "Hindi ko ho alam ang magagawa ko sa sitwasyon ko na iyon kung hindi ikaw tumulong sa akin"
@@ -147,12 +157,15 @@ label Talata_9_through_12_script:
 
     hide Florante_Suprised
 
+    show Laura_Suprised at right
+
     Laura "Florante!~"
 
     #show Laura
 
-
     hide Aladin_Suprised_Reversed
+
+    hide Laura_Suprised
 
     #show Adolfo
 
@@ -164,8 +177,12 @@ label Talata_9_through_12_script:
 
     Florante "Laura!"
 
+    show Laura_Suprised_Reversed at left
+
     hide Florante_Suprised
     Marco "Marco!~"
+
+    hide Laura_Suprised_Reversed
 
     show Florante_Suprised_Reversed at left
 

@@ -40,11 +40,14 @@ image Florante_Neutral_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Neu
 image Florante_Suprised = im.FactorScale("images/Talata_9-12/Suprised_Florante.jpg", 0.5)
 image Florante_Suprised_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Suprised_Florante.jpg", 0.5), horizontal="True")
 
-image Laura_Neutral = im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.5)
-image Laura_Neutral_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.5), horizontal="True")
+image Laura_Neutral = im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.55)
+image Laura_Neutral_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Neutral_Laura.jpg", 0.6), horizontal="True")
 
-image Laura_Suprised = im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.5)
-image Laura_Suprised_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.5), horizontal="True")
+image Laura_Suprised = im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.55)
+image Laura_Suprised_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Suprised_Laura.jpg", 0.55), horizontal="True")
+
+image Adolfo_Angry = im.FactorScale("images/Talata_9-12/Angry_Adolfo.jpg", 0.5)
+image Adolfo_Angry_Reversed = im.Flip(im.FactorScale("images/Talata_9-12/Angry_Adolfo.jpg", 0.5), horizontal="True")
 
 
 
@@ -169,6 +172,8 @@ label Talata_9_through_12_script:
 
     #show Adolfo
 
+    show Adolfo_Angry_Reversed at left
+
     Adolfo "Florante!?"
 
     show Florante_Suprised at right
@@ -176,6 +181,8 @@ label Talata_9_through_12_script:
     #show Laura
 
     Florante "Laura!"
+
+    hide Adolfo_Angry_Reversed
 
     show Laura_Suprised_Reversed at left
 
@@ -190,6 +197,8 @@ label Talata_9_through_12_script:
     Florante "A-ano ginagawa mo dito Adolfo at bakit kasama mo si Laura!?"
 
     #show Adolfo
+
+    show Adolfo_Angry at right
 
     Adolfo "Nandito ako para tapusin ko ang dapat kong tinapos mula simula pa…"
     Adolfo "At ‘yon ay patayin ka!"

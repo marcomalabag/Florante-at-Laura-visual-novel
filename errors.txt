@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/Talata_9-12/Talata_9-12_script.rpy", line 11: expected ':' not found.
-    label Talata_9_through_12_script
-                                    ^
+File "game/scripts/Talata_1-4/Talata_1-4_script.rpy", line 130: play requires a file
+    play flash_back
+                   ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Feb  9 13:38:09 2022
+Wed Feb 16 15:42:47 2022

@@ -19,7 +19,7 @@ transform right:
     yalign 1.0
 
 image Duke_Briseo_Palace_Day:
-    zoom 0.75
+    zoom 1.0
     "images/Talata_5-8/Duke_Briseo_Palace_Day.png"
 
 image Stage:
@@ -33,7 +33,7 @@ image Classroom:
     "images/Talata_5-8/classroom.jpg"
 
 image Haring_Linceo_Palace:
-    zoom 1.0
+    zoom 0.75
     "images/Talata_5-8/Haring_Linseo_Palace.png"
 
 image Happy_Florante = im.FactorScale("images/Talata_5-8/florante_happy.png", 0.5)
@@ -71,7 +71,7 @@ label Talata_5_through_8_script:
 
     f "Ang aking ina'y pumanaw na."
 
-    f "Oh mahal kong ina! Bakit mo ako iniwan? Ako'y hindi mo nakasama ang matagal." 
+    f "Oh mahal kong ina! Bakit mo ako iniwan? Ako'y hindi mo nakasama ang matagal."
     f "Ama, pupunta riya't ika'y aking dadamayan."
 
     scene Classroom

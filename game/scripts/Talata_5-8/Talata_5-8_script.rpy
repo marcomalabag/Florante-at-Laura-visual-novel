@@ -42,6 +42,9 @@ image Happy_Florante_Reversed = im.Flip(im.FactorScale("images/Talata_5-8/floran
 image Sad_Florante = im.FactorScale("images/Talata_5-8/florante_sad.png", 0.5)
 image Sad_Florante_Reversed = im.Flip(im.FactorScale("images/Talata_5-8/florante_sad.png", 0.5), horizontal="True")
 
+image Adolfo_Angry = im.FactorScale("images/Talata_5-8/Angry_Adolfo.jpg", 0.5)
+image Adolfo_Angry_Reversed = im.Flip(im.FactorScale("images/Talata_5-8/Angry_Adolfo.jpg", 0.5), horizontal="True")
+
 
 label Talata_5_through_8_script:
 
@@ -49,11 +52,15 @@ label Talata_5_through_8_script:
 
     g "Ayan na! Magsisimula na ang dulaan!"
 
+    show Adolfo_Angry_Reversed at left
+
     d "Ikaw Floranteng mang-aagaw dapat sayo'y mamatay!"
 
     g "Saklolo! Papatayin ni Adolfo si Florante!"
 
     "Iniligtas ni Menandro si Florante"
+
+    hide Adolfo_Angry_Reversed
 
     m "Ikaw Adolfo, anon'g nangyari sayo? Nasisiraan ka na ba ng ulo? Ang pag-sasadula'y iyong tinotoo, hindi mo kailangan gawin ito."
 

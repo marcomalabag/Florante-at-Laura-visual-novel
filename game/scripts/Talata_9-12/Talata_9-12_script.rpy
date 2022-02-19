@@ -132,7 +132,7 @@ label Talata_9_through_12_script:
     Apl "Nahakop niya ang trono ng Albanya kung saan napilitang maging reyna si Laura."
     Apl "Ngunit…mayroong bumaliktad sa buhay ni Adolfo"
     Apl "At si Menandro, ang namumuno ng isang hukbo, ang dahilan sa pagkalupig kay Adolfo"
-    Apl "Dahil roon, napatakas si Adolfo na tangay si Laura bihag patungo sa kagubatan -> held Laura as captive"
+    Apl "Dahil roon, napatakas si Adolfo na tangay si Laura bihag patungo sa kagubatan"
 
     scene Dark_Forest
 

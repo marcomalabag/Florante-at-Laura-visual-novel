@@ -70,7 +70,7 @@ label Talata_1_through_4_script:
 
     play sound lion_roar
 
-    Liyon "(growling)"
+    Liyon "(ungol)"
 
     Marco "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila"
 
@@ -80,7 +80,7 @@ label Talata_1_through_4_script:
 
     play sound sword_clash
 
-    Aladin "(Battle noises)"
+    Aladin "(Mga ingay ng labanan)"
 
     stop sound
 
@@ -90,7 +90,7 @@ label Talata_1_through_4_script:
 
     hide Neutral_Aladin
 
-    Florante "(wakes up)"
+    Florante "(gumigising)"
 
     show Suprised_Florante:
         xalign 1.0
@@ -127,13 +127,17 @@ label Talata_1_through_4_script:
 
     Marco "Ganon ba? Ano pa ang nangyari noong bata ka pa."
 
+
+
     show Classroom_flashback
 
     play sound flash_back
 
-    Florante "Sa edad na 11, pinadala ako ng aking mga magulang na sina Duke Briseo at Prinsesa Floresca sa Atenas, Gresya."
+    Florante "(sinusubukang alalahanin)"
 
     stop sound
+
+    Florante "Sa edad na 11, pinadala ako ng aking mga magulang na sina Duke Briseo at Prinsesa Floresca sa Atenas, Gresya."
 
     Florante "Ang dahilan ay upang makapag-aral sa ilalim ng kilalang guro na si Antenor.
     At doon ko na nakilala ang aking kalaban na si Adolfo."

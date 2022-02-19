@@ -127,8 +127,6 @@ label Talata_1_through_4_script:
 
     Marco "Ganon ba? Ano pa ang nangyari noong bata ka pa."
 
-
-
     show Classroom_flashback
 
     play sound flash_back

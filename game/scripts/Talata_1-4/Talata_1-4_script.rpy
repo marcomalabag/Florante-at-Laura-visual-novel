@@ -43,7 +43,7 @@ label Talata_1_through_4_script:
 
     Marco "Ang dilim dito sa gubat at may naririnig akong malakas na iyak. Doon galing ang iyak na iyon."
 
-    Florante "(crying)"
+    Florante "(Umiiyak)"
 
     Marco "Anong pangalan mo at bakit nakatali ka sa puno ng Higera."
 

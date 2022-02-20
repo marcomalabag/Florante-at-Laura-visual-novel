@@ -9,15 +9,29 @@ define Florante = Character("Florante")
 define Aladin = Character("Aladin")
 define Liyon = Character("liyon")
 
+transform left:
+    xalign 0.0
+    yalign 1.0
+
+transform right:
+    xalign 1.0
+    yalign 1.0
+
+
 image Dark_Forest = "images/Talata_1-4/Dark_Forest.jpg"
 image Classroom_flashback = "images/Talata_1-4/classroom_flashback.jpg"
 
 image Neutral_Florante = im.FactorScale("images/Talata_1-4/Neutral_Florante.jpg", 0.5)
 image Suprised_Florante = im.FactorScale("images/Talata_1-4/Suprised_Florante.jpg", 0.5)
 
-image Neutral_Aladin = im.FactorScale("images/Talata_1-4/Neutral_Aladin.jpg", 0.5)
+image Florante_tied = im.FactorScale("images/Talata_1-4/florante_tied.jpg", 0.57)
+image Florante_tied_Flipped = im.Flip(im.FactorScale("images/Talata_1-4/florante_tied.jpg", 0.75), horizontal="True")
 
-image Neutral_Aladin_Flipped = im.Flip("images/Talata_1-4/Neutral_Aladin.jpg", horizontal="True")
+image Neutral_Aladin = im.FactorScale("images/Talata_1-4/Neutral_Aladin.jpg", 0.5)
+image Neutral_Aladin_Flipped = im.Flip(im.FactorScale("images/Talata_1-4/Neutral_Aladin.jpg", 0.5), horizontal="True")
+
+image Suprised_Aladin = im.FactorScale("images/Talata_1-4/Suprised_Aladin.jpg", 0.5)
+image Suprised_Aladin_Flipped = im.Flip(im.FactorScale("images/Talata_1-4/Suprised_Aladin.jpg", 0.5), horizontal="True")
 
 define audio.lion_roar = "audio/Talata_1-4/565309__animadierer__lion-roar-snarl-growl-at013601.mp3"
 define audio.sword_clash = "audio/Talata_1-4/440069__ethanchase7744__sword-block-combo.wav"
@@ -45,6 +59,8 @@ label Talata_1_through_4_script:
 
     Florante "(Umiiyak)"
 
+    show Florante_tied at right
+
     Marco "Anong pangalan mo at bakit nakatali ka sa puno ng Higera."
 
     Florante "Ako si Florante, anak ng isang prinsesa at ng isang tagapag-payong maharlika,
@@ -58,9 +74,7 @@ label Talata_1_through_4_script:
 
     Florante "Ang aking mahal na si Laura. Ang tao na gumawa nito ay ang aking kalaban na si Konde Adolfo."
 
-    show Neutral_Aladin:
-        xalign 1.0
-        yalign 1.25
+    show Neutral_Aladin_Flipped at left
 
     Aladin "Dito pala ang pinanggagalingan ng malakas na iyak."
 
@@ -74,6 +88,18 @@ label Talata_1_through_4_script:
 
     Marco "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila"
 
+    hide Florante_tied at moveoutright
+
+    hide Neutral_Aladin_Flipped
+
+    show Neutral_Aladin_Flipped:
+        left
+        linear 1.0
+        right
+        "Suprised_Aladin"
+
+    Aladin "(Humahanda para sa laban)"
+
     Aladin "Wag kayo mag alala, ako ang bahala dito"
 
     stop sound
@@ -84,7 +110,11 @@ label Talata_1_through_4_script:
 
     stop sound
 
+    hide Neutral_Aladin_Flipped
+
     Marco "Kung hindi dahil sa iyo si Florante ay kinain na ng mga leon pero mukhang nawalan ng malay itong si Florante."
+
+    show Neutral_Aladin at right
 
     Aladin "Sige, ako na ang bahala kay Florante hanggang sa manumbalik ang lakas niya."
 
@@ -92,16 +122,11 @@ label Talata_1_through_4_script:
 
     Florante "(gumigising)"
 
-    show Suprised_Florante:
-        xalign 1.0
-        yalign 1.25
+    show Suprised_Florante at right
 
     Florante "A-ano ang nangyari sa akin at bakit mayroong isang moro dito!?"
 
-    show Neutral_Aladin_Flipped:
-        zoom .50
-        xalign -0.05
-        yalign 1.25
+    show Neutral_Aladin_Flipped at left
 
     Aladin "Ako si Aladin at ako ang nagligtas sa iyo mula sa mga leon."
 
@@ -113,9 +138,7 @@ label Talata_1_through_4_script:
 
     hide Suprised_Florante
 
-    show Neutral_Florante:
-        xalign 1.0
-        yalign 1.25
+    show Neutral_Florante at right
 
     Florante "Dahil ang mga Kristiyano at Moro ay dapat na magkaaway."
 
@@ -127,11 +150,11 @@ label Talata_1_through_4_script:
 
     Marco "Ganon ba? Ano pa ang nangyari noong bata ka pa."
 
-    show Classroom_flashback
-
     play sound flash_back
 
     Florante "(sinusubukang alalahanin)"
+
+    show Classroom_flashback with fade
 
     stop sound
 

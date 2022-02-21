@@ -1,30 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/Talata_1-4/Talata_1-4_script.rpy", line 96, in script
-    show Neutral_Aladin_Flipped:
-AttributeError: 'float' object has no attribute 'visit_all'
+  File "game/scripts/Talata_5-8/Talata_5-8_script.rpy", line 104, in script
+    db "Anak, huwag kang mawalan ng pag-asa Tadhana'y hindi basta-basta. Nandito kami't susuporta. Magiging gabay at tagapg-aruga."
+IOError: Couldn't find file 'audio/Talata_5-8/HeatleyBros - HeatleyBros V - 17 Dreams Of Childhood.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/Talata_1-4/Talata_1-4_script.rpy", line 96, in script
-    show Neutral_Aladin_Flipped:
-  File "renpy/ast.py", line 1197, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "renpy/ast.py", line 1167, in show_imspec
-    atl=atl)
-  File "renpy/exports.py", line 768, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "renpy/display/core.py", line 1147, in add
-    thing.visit_all(lambda d : None)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-AttributeError: 'float' object has no attribute 'visit_all'
+  File "game/scripts/Talata_5-8/Talata_5-8_script.rpy", line 104, in script
+    db "Anak, huwag kang mawalan ng pag-asa Tadhana'y hindi basta-basta. Nandito kami't susuporta. Magiging gabay at tagapg-aruga."
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 901, in do_display
+    **display_args)
+  File "renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4025, in interact_core
+    renpy.audio.audio.periodic()
+  File "renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/Talata_5-8/HeatleyBros - HeatleyBros V - 17 Dreams Of Childhood.mp3'.
 
 Windows-10-10.0.18362
 Ren'Py 7.4.11.2266
 Florante at Laura visual novel 1.0
-Sun Feb 20 21:59:31 2022
+Mon Feb 21 13:32:18 2022

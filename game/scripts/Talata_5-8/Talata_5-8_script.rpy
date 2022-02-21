@@ -19,7 +19,7 @@ transform right:
     yalign 1.0
 
 image Duke_Briseo_Palace_Day:
-    zoom 1.0
+    zoom .75
     "images/Talata_5-8/Duke_Briseo_Palace_Day.png"
 
 image Stage:
@@ -50,6 +50,8 @@ label Talata_5_through_8_script:
 
     scene Stage
 
+    play music "audio/Talata_5-8/HeatleyBros - HeatleyBros IV - 18 Dark Conspiracy.mp3" fadeout 1
+
     g "Ayan na! Magsisimula na ang dulaan!"
 
     show Adolfo_Angry_Reversed at left
@@ -70,7 +72,11 @@ label Talata_5_through_8_script:
 
     m "Ang nagtangka naman sa buhay ni Florante ay si Adolfo. Inggit siya kay Florante sapagkat nalampasan ni Florante ang kanyang kakayahan sa loob lamang ng anim na taon."
 
+    stop music fadeout 1
+
     scene Florante_Room
+
+    play music "audio/Talata_5-8/HeatleyBros - HeatleyBros V - 17 Otherworld.mp3" fadeout 2
 
     show Sad_Florante at right
 
@@ -87,7 +93,11 @@ label Talata_5_through_8_script:
 
     f "Ako'y nagpapaalam sa inyo't nagpapasalamat. Nagpapasalamat sa lahat-lahat."
 
+    stop music fadeout 2
+
     scene Duke_Briseo_Palace_Day
+
+    play music "audio/Talata_5-8/HeatleyBros - HeatleyBros III - 18 New Possibility.mp3" fadeout 3
 
     show Happy_Florante_Reversed at left
 
@@ -103,9 +113,13 @@ label Talata_5_through_8_script:
 
     db "May sulat na dumating mula sa Krotona humihingi ng tulong na kalabanin ang mga taga Persya na may intensyong manakop sa Krotona."
 
+    stop music fadeout 3
+
     scene Haring_Linceo_Palace
 
     "Nakita ni Florante si Laura"
+
+    play music "audio/Talata_5-8/HeatleyBros - HeatleyBros I - 10 Dreams Of Childhood.mp3" fadeout 4
 
     hl "Ako si Haring Linceo na taga Krotona. Ako ay nagagalak na kayo'y makilala at ito ang aking anak na si Laura."
 
@@ -182,3 +196,5 @@ label Talata_5_through_8_script:
     f "Ang aking ama at ang hari ay walang awang pinatay ni Adolfo, magbabayad siya sa ginawa niya."
 
     "Itinali muli si Florante at idinala sa kagubatan at itinali sa punong Higera."
+
+    stop music fadeout 4

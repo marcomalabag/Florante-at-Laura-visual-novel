@@ -57,6 +57,8 @@ label Talata_9_through_12_script:
 
     show Aladin_Suprised_Reversed at left
 
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros II - 15 Mystic Forest.mp3" fadeout 1
+
     Aladin "Naasan na ako…?"
     Aladin "Nakatakas na ako sa aking kaharian pero…"
     Aladin "Ang nakikita ko lang ay mga puno sa ibabaw pa ng mga puno"
@@ -76,7 +78,11 @@ label Talata_9_through_12_script:
 
     hide Aladin_Neutral_Reversed
 
+    stop music fadeout 1
+
     show BlackScreen
+
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros III - 18 New Possibility.mp3" fadeout 2
 
     Apl "Sandali nga lang ang kwento"
     Apl "Kaso, saan nanggaling si Aladin at papaano siya nakarating sa gubat?"
@@ -90,7 +96,11 @@ label Talata_9_through_12_script:
     Apl "At ang babae na minamahal ni Aladin…anak ni Sultan Ali-Adab…"
     Apl "Si Flerida"
 
+    stop music fadeout 2
+
     scene Market
+
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros IV - 10 Dark Alley.mp3" fadeout 3
 
     Unknown "Hoy!"
     Unknown "Bakit mo minamaliitan ang isang babae!?"
@@ -107,7 +117,11 @@ label Talata_9_through_12_script:
     Unknown "…"
     Unknown "Halika, lumayo pa tayo sa kanya."
 
+    stop music fadeout 3
+
     scene Bazaar
+
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros I - 10 Dreams Of Childhood.mp3" fadeout 4
 
     show Laura_Neutral at right
 
@@ -123,7 +137,11 @@ label Talata_9_through_12_script:
     Laura "Ah, ako ho si Laura, anak ni Haring Linceo"
     Flerida "Si Haring Linceo!?…mukhang tayong dalawa ay nakatadhana ng magkita."
 
+    stop music fadeout 4
+
     show BlackScreen
+
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros III - 18 New Possibility.mp3" fadeout 5
 
     Apl "Pagkatapos sinagip ni Flerida si Laura"
     Apl "Matagal silang nag usap tungkol sa bawat isa"
@@ -134,13 +152,18 @@ label Talata_9_through_12_script:
     Apl "At si Menandro, ang namumuno ng isang hukbo, ang dahilan sa pagkalupig kay Adolfo"
     Apl "Dahil roon, napatakas si Adolfo na tangay si Laura bihag patungo sa kagubatan"
 
+    stop music fadeout 5
+
     scene Dark_Forest
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros IV - 18 Dark Conspiracy.mp3" fadeout 6
 
     show Aladin_Neutral_Reversed at left
+
 
     Aladin "Mayroon kayo naririnig?"
 
     show Florante_Neutral at right
+
 
     Florante "Dahan-dahan ka lang Aladin, baka isa pa itong leon"
 
@@ -162,7 +185,10 @@ label Talata_9_through_12_script:
 
     show Laura_Suprised at right
 
+
     Laura "Florante!~"
+
+
 
     #show Laura
 
@@ -171,6 +197,8 @@ label Talata_9_through_12_script:
     hide Laura_Suprised
 
     #show Adolfo
+
+
 
     show Adolfo_Angry_Reversed at left
 
@@ -196,14 +224,16 @@ label Talata_9_through_12_script:
 
     Florante "A-ano ginagawa mo dito Adolfo at bakit kasama mo si Laura!?"
 
-    #show Adolfo
-
     show Adolfo_Angry at right
 
     Adolfo "Nandito ako para tapusin ko ang dapat kong tinapos mula simula pa…"
     Adolfo "At ‘yon ay patayin ka!"
 
+    stop music fadeout 6
+
     show BlackScreen
+
+    play music "audio/Talata_9-12/HeatleyBros - HeatleyBros II - 14 8 Bit Sunshine.mp3" fadeout 7
 
     Apl "pagkatapos ng kanilang laban…"
     Apl "Nabatid nina Florante at Aladin ang kanilang pawang tapat sa kanila."
@@ -215,3 +245,5 @@ label Talata_9_through_12_script:
     Apl "Nagbalik naman sina Aladin at Flerida sa Persya kung saan naging sultan si Aladin sapagkat sa pagkamatay ng kaniyan ama."
     Apl "Namuhay na muli ng mapayapa at matiwasay and dalawang kaharian."
     Apl "Dito nagtatapos ang kwentong Florante at Laura."
+
+    stop music fadeout 7

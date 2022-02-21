@@ -41,6 +41,7 @@ define audio.flash_back = "audio/Talata_1-4/Flashback.mp3"
 
 
 
+
 # The game starts here.
 label Talata_1_through_4_script:
     # Show a background. This uses a placeholder by default, but you can
@@ -48,6 +49,8 @@ label Talata_1_through_4_script:
     # images directory to show it.
 
     scene Dark_Forest
+
+    play music "audio/Talata_1-4/HeatleyBros - HeatleyBros II - 15 Mystic Forest.mp3" fadeout 1
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -82,7 +85,11 @@ label Talata_1_through_4_script:
 
     Aladin "Ako si Aladin. Ako ay isang moro galing sa Persya."
 
+    stop music fadeout 1
+
     play sound lion_roar
+
+    play music "audio/Talata_1-4/HeatleyBros - HeatleyBros VI - Fight Or Flight.mp3" fadeout 2
 
     Liyon "(ungol)"
 
@@ -110,6 +117,8 @@ label Talata_1_through_4_script:
 
     stop sound
 
+    stop music fadeout 2
+
     hide Neutral_Aladin_Flipped
 
     Marco "Kung hindi dahil sa iyo si Florante ay kinain na ng mga leon pero mukhang nawalan ng malay itong si Florante."
@@ -119,6 +128,8 @@ label Talata_1_through_4_script:
     Aladin "Sige, ako na ang bahala kay Florante hanggang sa manumbalik ang lakas niya."
 
     hide Neutral_Aladin
+
+    play music "audio/Talata_1-4/HeatleyBros - HeatleyBros III - 18 New Possibility.mp3" fadeout 3
 
     Florante "(gumigising)"
 
@@ -150,6 +161,8 @@ label Talata_1_through_4_script:
 
     Marco "Ganon ba? Ano pa ang nangyari noong bata ka pa."
 
+    stop music fadeout 3
+
     play sound flash_back
 
     Florante "(sinusubukang alalahanin)"
@@ -157,6 +170,8 @@ label Talata_1_through_4_script:
     show Classroom_flashback with fade
 
     stop sound
+
+    play music "audio/Talata_1-4/HeatleyBros - HeatleyBros IV - 18 Dark Conspiracy.mp3" fadeout 4
 
     Florante "Sa edad na 11, pinadala ako ng aking mga magulang na sina Duke Briseo at Prinsesa Floresca sa Atenas, Gresya."
 
@@ -171,6 +186,8 @@ label Talata_1_through_4_script:
 
     Florante "Dahil sa katanyagan at pagkilala na nakuha ko,
     hindi ikinatuwa ni Adolfo."
+
+    stop music fadeout 4
 
 
 

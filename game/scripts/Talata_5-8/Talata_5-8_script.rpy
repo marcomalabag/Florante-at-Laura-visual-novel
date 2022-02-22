@@ -1,14 +1,16 @@
-define f = Character("Florante")
-define d = Character("Adolfo")
-define m = Character("Menandro")
+define f = Character("Florante", who_color="#3b8be0")
+define d = Character("Adolfo", who_color="#b21f1c")
+define m = Character("Menandro", who_color="#DDDD11")
 define kinatawan = Character("Kinatawan ng Krotona")
-define l = Character("Laura")
+define l = Character("Laura", who_color="#ffc0cb")
 define e = Character("Emir")
 define go = Character("General Osmalik")
 define gm = Character("General Miramolin")
-define db = Character("Duke Briseo")
-define hl = Character("Haring Linceo")
+define db = Character("Duke Briseo", who_color="#2792A5")
+define hl = Character("Haring Linceo", who_color="#FFD700")
 define g = Character("Gerry")
+
+
 
 transform left:
     xalign 0.0
@@ -60,7 +62,7 @@ label Talata_5_through_8_script:
 
     g "Saklolo! Papatayin ni Adolfo si Florante!"
 
-    "Iniligtas ni Menandro si Florante"
+    "Iniligtas ni Menandro si Florante."
 
     hide Adolfo_Angry_Reversed
 
@@ -109,7 +111,7 @@ label Talata_5_through_8_script:
 
     hide Happy_Florante_Reversed
 
-    "May dumating na kawal ng krotona upang ipadala ang isang liham para kay Duke Briseo"
+    "May dumating na kawal ng krotona upang ipadala ang isang liham para kay Duke Briseo."
 
     db "May sulat na dumating mula sa Krotona humihingi ng tulong na kalabanin ang mga taga Persya na may intensyong manakop sa Krotona."
 
@@ -117,7 +119,7 @@ label Talata_5_through_8_script:
 
     scene Haring_Linceo_Palace
 
-    "Nakita ni Florante si Laura"
+    "Nakita ni Florante si Laura."
 
     play music "audio/Talata_5-8/HeatleyBros - HeatleyBros I - 10 Dreams Of Childhood.mp3" fadeout 4
 
@@ -126,7 +128,7 @@ label Talata_5_through_8_script:
     f "Masaya ako't nakilala kita. Sana tayo'y magkakilala pa ng lubos at maging magkaibigan o higit pa."
 
     scene black
-    "Umalis si Florante ng ilang buwan pang makipagdigmaan"
+    "Umalis si Florante ng ilang buwan pang makipagdigmaan."
 
     scene Haring_Linceo_Palace
 
@@ -134,7 +136,7 @@ label Talata_5_through_8_script:
 
     f "Laura ika'y maghihintay. Babalik ako at ika'y babalikan."
 
-    l "Pangako, FLorante, ika'y aking hihintayin."
+    l "Pangako, Florante, ika'y aking hihintayin."
 
     g "Ano na ba kayo ni Florante, Laura?"
 
@@ -149,7 +151,7 @@ label Talata_5_through_8_script:
 
     f "Mabuti nga na ganoon. Dito muna tayo sa Krotona ng limang buwan bago tayo bumalik upang masigurado na wala na ulit mananakop."
 
-    "Makalipas ang limang buwan pagkatapos ng digmaan"
+    "Makalipas ang limang buwan pagkatapos ng digmaan."
 
     g "Sa wakas tayo'y makakauwi na ulit sa Albanya pagkatapos ng matagal na panahon."
 
@@ -163,11 +165,11 @@ label Talata_5_through_8_script:
 
     "Makalipas ang panahon, naging magaling na heneral si Florante at pabalik siya muli sa Albanya."
 
-    g "Matagal ka na ring nakikipag digmaan Florante, mabuti nakakabalik tayo na normal ang laha- Florante! Tignan mo ang ALbanya! Iba na ang watawat!"
+    g "Matagal ka na ring nakikipag digmaan Florante, mabuti nakakabalik tayo na normal ang laha- Florante! Tignan mo ang Albanya! Iba na ang watawat!"
 
     f "Iyon ay di hamak na watawat ng Persia! Kailangan natin mailigtas ang aking ama, si Haring Linceo, at si Laura!"
 
-    "Nailigtas ni Florante ang kanyang mga gustong mailigtas kasama na rin si Adolfo at binigyan ng titulong 'Tagapagtanggol ng Albanya'"
+    "Nailigtas ni Florante ang kanyang mga gustong mailigtas kasama na rin si Adolfo at binigyan ng titulong 'Tagapagtanggol ng Albanya'."
 
     g "Sino nanaman ang kalaban mo ngayon?"
 
@@ -181,7 +183,7 @@ label Talata_5_through_8_script:
 
 
 
-    g "Sa wakas andito na ulit tayo sa ALbanya."
+    g "Sa wakas andito na ulit tayo sa Albanya."
 
     "Maraming kawal ang dumating at itinali at binugbog si Florante pagkatapos ay idinala sa bilangguan."
 

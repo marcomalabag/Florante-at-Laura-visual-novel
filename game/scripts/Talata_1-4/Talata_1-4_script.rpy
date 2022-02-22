@@ -4,10 +4,14 @@
 # name of the character.
 
 #define e = Character("Eileen")
+
+
 define Marco = Character("Marco")
-define Florante = Character("Florante")
-define Aladin = Character("Aladin")
-define Liyon = Character("liyon")
+define Florante = Character("Florante", who_color="#3b8be0")
+define Aladin = Character("Aladin", who_color="#a5682a")
+define Liyon = Character("Liyon", who_color="#ffff00")
+
+
 
 transform left:
     xalign 0.0
@@ -93,7 +97,7 @@ label Talata_1_through_4_script:
 
     Liyon "(ungol)"
 
-    Marco "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila"
+    Marco "M-may dalawang liyon nakarinig ‘rin sa iyo at mukhang nagugutom sila."
 
     hide Florante_tied at moveoutright
 
@@ -105,15 +109,15 @@ label Talata_1_through_4_script:
         right
         "Suprised_Aladin"
 
-    Aladin "(Humahanda para sa laban)"
+    Aladin "(Humahanda para sa laban)."
 
-    Aladin "Wag kayo mag alala, ako ang bahala dito"
+    Aladin "Wag kayo mag alala, ako ang bahala dito."
 
     stop sound
 
     play sound sword_clash
 
-    Aladin "(Mga ingay ng labanan)"
+    Aladin "(Mga ingay ng labanan)."
 
     stop sound
 

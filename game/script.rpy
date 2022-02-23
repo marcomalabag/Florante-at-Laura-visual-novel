@@ -17,15 +17,11 @@ label start:
 
     Narrator "Kumusta!~"
 
-    Narrator "Ako ay si Apl, ang tagapagsalaysay sa inyo ngayon."
-
-    Narrator "Hindi lamang ako ang sasama sa inyo."
-
-    Narrator "Sasamahin kayo nina Marco at Gerry sa pagsalaysay mula sa loob ng kwento."
-
-    Narrator "Tayo ngayon ay magsamasama sa awit ng..."
+    Narrator "Ako ay si Apl, ang tagapagsalaysay sa inyo ngayon sa awit ng..."
 
     Narrator "Florante at Laura."
+
+    Narrator "Sasamahin natin sina Marco at Gerry sa pagsalaysay mula sa loob ng kwento."
 
     Narrator "Handa na ba kayo sa isang pakikipagsapalaran?"
 

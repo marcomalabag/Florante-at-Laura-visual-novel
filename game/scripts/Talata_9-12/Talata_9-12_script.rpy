@@ -221,9 +221,10 @@ label Talata_9_through_12_script:
     show Laura_Suprised_Reversed at left
 
     hide Florante_Suprised
-    Marco "Marco!~"
 
     hide Laura_Suprised_Reversed
+    Marco "Marco!~"
+
 
     show Florante_Suprised_Reversed at left
 
